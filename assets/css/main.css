@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+margin - нешних отступ со всех сторон
+padding - нутренние отступы со всех сторон
+border-box говорит браузеру учитывать любые границы и внутренние отступы в значениях
+align-items выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении
+justify-content определяет как браузер распределяет пространство между и вокруг флекс элементов вдоль главной оси контейнера (горизонтально)
+ */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    color: #7c9ab7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #A1A1A1;
+    outline: none;
+}
+
+button{
+    margin: 10px 0;
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    display: block;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.error {
+    border-bottom: 2px solid #ff4432;
+    /*background: darksalmon;*/
+}
+
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.none {
+    display: none;
+}
+
+.logout {
+    text-align: center;
+    color: #b7625c;
+}
+
+
+
